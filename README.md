@@ -1,4 +1,4 @@
-# Fire Menu  
+﻿# Fire Menu  
 <sub>Forked from ii's Stupid Menu</sub>
 
 Fire Menu is a **feature-packed** mod menu for Gorilla Tag, built by the community, for the community. Whether you just want mods, are a developer, or anything inbetween, this menu has you covered. Designed to be **as useful as possible**, it includes a variety of features and options that let you customize your modding experience to your heart’s content.  
@@ -139,5 +139,5 @@ If you wish to support us, here are some of the ways you can!
 
 #IMPORTANT#
 
-THIS MOD MENU WAS MADE FROM THE Seralyth Menu, all credits to them for the menu fork.
+THIS MOD MENU WAS MADE FROM THE Fire Menu, all credits to them for the menu fork.
 Also since the mod menu was archived, the menu is to continue its legacy

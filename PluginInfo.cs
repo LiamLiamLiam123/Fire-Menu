@@ -1,9 +1,9 @@
 ﻿/*
- * Seralyth Menu  PluginInfo.cs
+ * Fire Menu  PluginInfo.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,25 +19,25 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-namespace Seralyth
+namespace Fire
 {
     public class PluginInfo
     {
-        public const string GUID = "org.seralyth.gorillatag.seralythmenu";
-        public const string Name = "Seralyth Menu";
+        public const string GUID = "org.Fire.gorillatag.Firemenu";
+        public const string Name = "Fire Menu";
         public const string Description = "Community powered mod menu for Gorilla Tag.";
-        public const string BuildTimestamp = "2026-08-14T22:16:39Z";
+        public const string BuildTimestamp = "2026-09-19T23:20:58Z";
         public const string Version = "5.0.2";
 
         public const string BaseDirectory =
 #if LEGAL || LEGAL_DEBUG
-            "SeralythMenu/Legal";
+            "FireMenu/Legal";
 #else
-            "SeralythMenu";
+            "FireMenu";
 #endif
-        public const string ClientResourcePath = "SeralythMenu.Resources.Client";
-        public const string ServerResourcePath = "https://raw.githubusercontent.com/Seralyth/Seralyth-Menu/master/Resources/Server";
-        public const string ServerAPI = "https://menu.seralyth.software";
+        public const string ClientResourcePath = "FireMenu.Resources.Client";
+        public const string ServerResourcePath = "https://raw.githubusercontent.com/Fire/Fire-Menu/master/Resources/Server";
+        public const string ServerAPI = "https://menu.Fire.software";
         public const string Logo = @"
                                             %%%%%                                                   
                                            %%% %%%%                                                 
