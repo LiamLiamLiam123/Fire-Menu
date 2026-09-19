@@ -1,9 +1,9 @@
-/*
- * Seralyth Menu  Mods/CustomMaps/SceneMapRegistry.cs
+﻿/*
+ * Fire Menu  Mods/CustomMaps/SceneMapRegistry.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 
 using System.Collections.Generic;
 
-namespace Seralyth.Mods.CustomMaps
+namespace Fire.Mods.CustomMaps
 {
     public static class SceneMapRegistry
     {

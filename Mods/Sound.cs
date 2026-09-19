@@ -1,9 +1,9 @@
-/*
- * Seralyth Menu  Mods/Sound.cs
+﻿/*
+ * Fire Menu  Mods/Sound.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,22 +24,22 @@ using GorillaLocomotion;
 using Photon.Pun;
 using Photon.Realtime;
 using Photon.Voice.Unity;
-using Seralyth.Classes.Menu;
-using Seralyth.Extensions;
-using Seralyth.Managers;
-using Seralyth.Menu;
-using Seralyth.Patches.Menu;
+using Fire.Classes.Menu;
+using Fire.Extensions;
+using Fire.Managers;
+using Fire.Menu;
+using Fire.Patches.Menu;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-using static Seralyth.Menu.Main;
-using static Seralyth.Utilities.AssetUtilities;
-using static Seralyth.Utilities.FileUtilities;
+using static Fire.Menu.Main;
+using static Fire.Utilities.AssetUtilities;
+using static Fire.Utilities.FileUtilities;
 using Random = UnityEngine.Random;
 
-namespace Seralyth.Mods
+namespace Fire.Mods
 {
     public static class Sound
     {

@@ -1,9 +1,9 @@
 ﻿/*
- * Seralyth Menu  Classes/Mods/PortalTrigger.cs
+ * Fire Menu  Classes/Mods/PortalTrigger.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,13 +20,13 @@
  */
 
 using GorillaLocomotion;
-using Seralyth.Managers;
-using Seralyth.Mods;
+using Fire.Managers;
+using Fire.Mods;
 using System;
 using System.Linq;
 using UnityEngine;
 
-namespace Seralyth.Classes.Mods
+namespace Fire.Classes.Mods
 {
     public class PortalTrigger : MonoBehaviour
     {

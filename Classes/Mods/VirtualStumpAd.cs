@@ -1,9 +1,9 @@
 ﻿/*
- * Seralyth Menu  Classes/Mods/VirtualStumpAd.cs
+ * Fire Menu  Classes/Mods/VirtualStumpAd.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,9 +23,9 @@ using GorillaExtensions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Video;
-using static Seralyth.Menu.Main;
+using static Fire.Menu.Main;
 
-namespace Seralyth.Classes.Mods
+namespace Fire.Classes.Mods
 {
     public class VirtualStumpAd : MonoBehaviour
     {
@@ -107,7 +107,7 @@ namespace Seralyth.Classes.Mods
                 if (featuredMapText != null)
                 {
                     oldText = featuredMapText.text;
-                    featuredMapText.text = "<b><color=#7C00FA>Seralyth Menu</color></b>";
+                    featuredMapText.text = "<b><color=#FF7A00>Fire Menu</color></b>";
                     MapInfoText.SetActive(true);
                 }
 

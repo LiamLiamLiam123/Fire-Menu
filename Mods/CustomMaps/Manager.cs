@@ -1,9 +1,9 @@
-/*
- * Seralyth Menu  Mods/CustomMaps/Manager.cs
+﻿/*
+ * Fire Menu  Mods/CustomMaps/Manager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,10 +20,10 @@
  */
 
 using GorillaTagScripts.VirtualStumpCustomMaps;
-using Seralyth.Classes.Menu;
-using Seralyth.Managers;
-using Seralyth.Menu;
-using Seralyth.Utilities;
+using Fire.Classes.Menu;
+using Fire.Managers;
+using Fire.Menu;
+using Fire.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -31,7 +31,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace Seralyth.Mods.CustomMaps
+namespace Fire.Mods.CustomMaps
 {
     public static class Manager
     {

@@ -1,9 +1,9 @@
-/*
- * Seralyth Menu  Mods/Fun.cs
+﻿/*
+ * Fire Menu  Mods/Fun.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,13 +40,13 @@ using Photon.Voice.Unity.UtilityScripts;
 using PlayFab;
 using PlayFab.ClientModels;
 using POpusCodec.Enums;
-using Seralyth.Classes.Menu;
-using Seralyth.Classes.Mods;
-using Seralyth.Extensions;
-using Seralyth.Managers;
-using Seralyth.Menu;
-using Seralyth.Patches.Menu;
-using Seralyth.Utilities;
+using Fire.Classes.Menu;
+using Fire.Classes.Mods;
+using Fire.Extensions;
+using Fire.Managers;
+using Fire.Menu;
+using Fire.Patches.Menu;
+using Fire.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -57,16 +57,16 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Windows.Speech;
-using static Seralyth.Menu.Main;
-using static Seralyth.Utilities.AssetUtilities;
-using static Seralyth.Utilities.GameModeUtilities;
-using static Seralyth.Utilities.RandomUtilities;
-using static Seralyth.Utilities.RigUtilities;
+using static Fire.Menu.Main;
+using static Fire.Utilities.AssetUtilities;
+using static Fire.Utilities.GameModeUtilities;
+using static Fire.Utilities.RandomUtilities;
+using static Fire.Utilities.RigUtilities;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Seralyth.Mods
+namespace Fire.Mods
 {
     public static class Fun
     {
@@ -627,7 +627,7 @@ namespace Seralyth.Mods
         {
             if (FreeCamObject == null)
             {
-                FreeCamObject = new GameObject("Seralyth_CameraObj");
+                FreeCamObject = new GameObject("Fire_CameraObj");
                 FreeCamObject.transform.position = GorillaTagger.Instance.headCollider.transform.position;
             }
 
@@ -652,7 +652,7 @@ namespace Seralyth.Mods
         {
             if (FreeCamObject == null)
             {
-                FreeCamObject = new GameObject("Seralyth_CameraObj");
+                FreeCamObject = new GameObject("Fire_CameraObj");
                 FreeCamObject.transform.position = GorillaTagger.Instance.headCollider.transform.position;
             }
 
@@ -668,7 +668,7 @@ namespace Seralyth.Mods
         {
             if (FreeCamObject == null)
             {
-                FreeCamObject = new GameObject("Seralyth_CameraObj");
+                FreeCamObject = new GameObject("Fire_CameraObj");
                 FreeCamObject.transform.position = GorillaTagger.Instance.headCollider.transform.position;
             }
 
@@ -684,7 +684,7 @@ namespace Seralyth.Mods
         {
             if (FreeCamObject == null)
             {
-                FreeCamObject = new GameObject("Seralyth_CameraObj");
+                FreeCamObject = new GameObject("Fire_CameraObj");
                 FreeCamObject.transform.position = GorillaTagger.Instance.headCollider.transform.position;
             }
 
@@ -767,7 +767,7 @@ namespace Seralyth.Mods
                 {
                     if (FreeCamObject == null)
                     {
-                        FreeCamObject = new GameObject("Seralyth_CameraObj");
+                        FreeCamObject = new GameObject("Fire_CameraObj");
                         FreeCamObject.transform.position = GorillaTagger.Instance.headCollider.transform.position;
                     }
 
@@ -1484,7 +1484,7 @@ namespace Seralyth.Mods
 
         private static VirtualStumpAd virtualStumpAd;
         public static void CustomVirtualStumpVideo() =>
-            virtualStumpAd ??= new GameObject("Seralyth_VirtualStumpAd").AddComponent<VirtualStumpAd>();
+            virtualStumpAd ??= new GameObject("Fire_VirtualStumpAd").AddComponent<VirtualStumpAd>();
 
         public static void DisableCustomVirtualStumpVideo()
         {
@@ -2825,7 +2825,7 @@ Piece Name: {gunTarget.name}";
             VRRig.LocalRig.enabled = false;
             VRRig.LocalRig.transform.position = HoverboardPos - Vector3.up * 0.5f;
 
-            GTPlayer.Instance.SetHoverAllowed(true);
+            GTPlayer.Instance.isHoverAllowed = true;
 
             HoverboardVisual hoverboardVisual = VRRig.LocalRig.hoverboardVisual;
 
@@ -2900,7 +2900,7 @@ Piece Name: {gunTarget.name}";
         public static void SpawnHoverboard()
         {
             BetaDropBoard(VRRig.LocalRig.transform.position, VRRig.LocalRig.transform.rotation, Vector3.zero, Vector3.zero, RandomColor());
-            GTPlayer.Instance.SetHoverAllowed(true);
+            GTPlayer.Instance.isHoverAllowed = true;
         }
 
         private static float hoverboardSpamDelay;
@@ -3266,7 +3266,7 @@ Piece Name: {gunTarget.name}";
 
                     ThrowableBug targetBug = bugSpamToggle ? bug : firefly;
 
-                    GameObject bugSpamObject = new GameObject("Seralyth_BugSpamObject");
+                    GameObject bugSpamObject = new GameObject("Fire_BugSpamObject");
                     bugSpamObject.transform.localScale = Vector3.one * 0.2f;
                     bugSpamObject.layer = 3;
 
@@ -3310,7 +3310,7 @@ Piece Name: {gunTarget.name}";
 
                 LckSocialCamera camera = cameraSpamType ? LckSocialCameraManager.Instance._networkedCococam : LckSocialCameraManager.Instance._networkedTablet;
 
-                GameObject cameraSpamObject = new GameObject("Seralyth_CameraSpamObject");
+                GameObject cameraSpamObject = new GameObject("Fire_CameraSpamObject");
                 cameraSpamObject.transform.localScale = Vector3.one * 0.2f;
                 cameraSpamObject.layer = 3;
 
@@ -3378,7 +3378,7 @@ Piece Name: {gunTarget.name}";
                     case 0:
                         {
                             ThrowableBug targetBug = bug;
-                            GameObject bugSpamObject = new GameObject("Seralyth_BugSpamObject");
+                            GameObject bugSpamObject = new GameObject("Fire_BugSpamObject");
                             bugSpamObject.transform.localScale = Vector3.one * 0.2f;
                             bugSpamObject.layer = 3;
 
@@ -3412,7 +3412,7 @@ Piece Name: {gunTarget.name}";
                     case 1:
                         {
                             ThrowableBug targetBug = firefly;
-                            GameObject bugSpamObject = new GameObject("Seralyth_FireflySpamObject");
+                            GameObject bugSpamObject = new GameObject("Fire_FireflySpamObject");
                             bugSpamObject.transform.localScale = Vector3.one * 0.2f;
                             bugSpamObject.layer = 3;
 
@@ -3450,7 +3450,7 @@ Piece Name: {gunTarget.name}";
 
                             LckSocialCamera camera = LckSocialCameraManager.Instance._networkedCococam;
 
-                            GameObject cameraSpamObject = new GameObject("Seralyth_CameraSpamObject");
+                            GameObject cameraSpamObject = new GameObject("Fire_CameraSpamObject");
                             cameraSpamObject.transform.localScale = Vector3.one * 0.2f;
                             cameraSpamObject.layer = 3;
 
@@ -3494,7 +3494,7 @@ Piece Name: {gunTarget.name}";
 
                             LckSocialCamera camera = LckSocialCameraManager.Instance._networkedTablet;
 
-                            GameObject cameraSpamObject = new GameObject("Seralyth_CameraSpamObject");
+                            GameObject cameraSpamObject = new GameObject("Fire_CameraSpamObject");
                             cameraSpamObject.transform.localScale = Vector3.one * 0.2f;
                             cameraSpamObject.layer = 3;
 
@@ -3783,7 +3783,7 @@ Piece Name: {gunTarget.name}";
 
                 if (inAir && !lastInAir)
                 {
-                    GameObject bugSpamObject = new GameObject("Seralyth_BugSpamObject");
+                    GameObject bugSpamObject = new GameObject("Fire_BugSpamObject");
                     bugSpamObject.transform.localScale = Vector3.one * 0.2f;
                     bugSpamObject.layer = 3;
 
@@ -3864,7 +3864,7 @@ Piece Name: {gunTarget.name}";
                 {
                     grabbingCamera = false;
 
-                    GameObject bugSpamObject = new GameObject("Seralyth_BugSpamObject");
+                    GameObject bugSpamObject = new GameObject("Fire_BugSpamObject");
                     bugSpamObject.transform.localScale = Vector3.one * 0.2f;
                     bugSpamObject.layer = 3;
 
@@ -5874,7 +5874,7 @@ Piece Name: {gunTarget.name}";
             VRRig.LocalRig.enabled = false;
             VRRig.LocalRig.transform.position = HoverboardPos - Vector3.up * 1f;
 
-            GTPlayer.Instance.SetHoverAllowed(true);
+            GTPlayer.Instance.isHoverAllowed = true;
             GTPlayer.Instance.SetHoverActive(true);
 
             HoverboardVisual hoverboardVisual = VRRig.LocalRig.hoverboardVisual;
@@ -5954,7 +5954,7 @@ Piece Name: {gunTarget.name}";
         public static string[] names = { };
         public static void EnableCustomNameCycle() // Thanks to xynz_ for some fixes
         {
-            var path = $"{PluginInfo.BaseDirectory}/Seralyth_CustomNameCycle.txt";
+            var path = $"{PluginInfo.BaseDirectory}/Fire_CustomNameCycle.txt";
             if (File.Exists(path))
             {
                 names = File.ReadAllText(path)
@@ -6991,7 +6991,7 @@ Piece Name: {gunTarget.name}";
                 catch { LogManager.Log("Failed to log player"); }
             }
             text += "\n====================================\n";
-            text += "Text file generated with Seralyth Menu";
+            text += "Text file generated with Fire Menu";
             string fileName = $"{PluginInfo.BaseDirectory}/PlayerInfo/" + PhotonNetwork.CurrentRoom.Name + ".txt";
 
             File.WriteAllText(fileName, text);

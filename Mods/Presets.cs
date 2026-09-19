@@ -1,9 +1,9 @@
-/*
- * Seralyth Menu  Mods/Presets.cs
+﻿/*
+ * Fire Menu  Mods/Presets.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,12 +19,12 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-using Seralyth.Managers;
+using Fire.Managers;
 using System;
 using System.IO;
-using static Seralyth.Menu.Main;
+using static Fire.Menu.Main;
 
-namespace Seralyth.Mods
+namespace Fire.Mods
 {
     public static class Presets
     {
@@ -50,9 +50,9 @@ namespace Seralyth.Mods
             pageButtonType = 1;
             fontCycle = -1;
 
-            Seralyth.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
-            Seralyth.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
-            Seralyth.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
 
             Settings.Panic();
 
@@ -144,9 +144,9 @@ namespace Seralyth.Mods
             pageButtonType = 1;
             fontCycle = 0;
 
-            Seralyth.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
-            Seralyth.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
-            Seralyth.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
 
             Settings.Panic();
 
@@ -172,9 +172,9 @@ namespace Seralyth.Mods
             pageButtonType = 1;
             fontCycle = 0;
 
-            Seralyth.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
-            Seralyth.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
-            Seralyth.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Menu Theme").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Font Type").cycleValue(true);
 
             Settings.Panic();
 
@@ -194,7 +194,7 @@ namespace Seralyth.Mods
             };
 
             pageButtonType = 2;
-            Seralyth.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
+            Fire.Menu.Buttons.GetIndex("Change Page Type").cycleValue(true);
 
             foreach (string mod in presetMods)
                 Toggle(mod);

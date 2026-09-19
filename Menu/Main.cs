@@ -1,9 +1,9 @@
-/*
- * Seralyth Menu  Menu/Main.cs
+﻿/*
+ * Fire Menu  Menu/Main.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -28,14 +28,14 @@ using GorillaTagScripts;
 using HarmonyLib;
 using Photon.Pun;
 using Photon.Realtime;
-using Seralyth.Classes.Menu;
-using Seralyth.Classes.Mods;
-using Seralyth.Extensions;
-using Seralyth.Managers;
-using Seralyth.Mods;
-using Seralyth.Patches;
-using Seralyth.Patches.Menu;
-using Seralyth.Utilities;
+using Fire.Classes.Menu;
+using Fire.Classes.Mods;
+using Fire.Extensions;
+using Fire.Managers;
+using Fire.Mods;
+using Fire.Patches;
+using Fire.Patches.Menu;
+using Fire.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -58,17 +58,17 @@ using UnityEngine.XR;
 using Valve.Newtonsoft.Json;
 using Valve.VR;
 using WebSocketSharp;
-using static Seralyth.Utilities.AssetUtilities;
-using static Seralyth.Utilities.FileUtilities;
-using static Seralyth.Utilities.RandomUtilities;
-using ButtonCollider = Seralyth.Classes.Menu.ButtonCollider;
+using static Fire.Utilities.AssetUtilities;
+using static Fire.Utilities.FileUtilities;
+using static Fire.Utilities.RandomUtilities;
+using ButtonCollider = Fire.Classes.Menu.ButtonCollider;
 using CommonUsages = UnityEngine.XR.CommonUsages;
-using Console = Seralyth.Classes.Menu.Console;
+using Console = Fire.Classes.Menu.Console;
 using JoinType = GorillaNetworking.JoinType;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Seralyth.Menu
+namespace Fire.Menu
 {
     [HarmonyPatch(typeof(GTPlayer), nameof(GTPlayer.LateUpdate))]
     public class Main : MonoBehaviour
@@ -93,9 +93,9 @@ namespace Seralyth.Menu
             //if (Plugin.FirstLaunch)
             //    Prompt("It seems like this is your first time using the menu. Would you like to watch a quick tutorial to get to know how to use it?", Settings.ShowTutorial);
             //else
-            //    acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Seralyth_HideDonationButton.txt");
+            //    acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Fire_HideDonationButton.txt");
             if (!Bootstrapper.FirstLaunch)
-                acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Seralyth_HideDonationButton.txt");
+                acceptedDonations = File.Exists($"{PluginInfo.BaseDirectory}/Fire_HideDonationButton.txt");
 
             NetworkSystem.Instance.OnJoinedRoomEvent += OnJoinRoom;
             NetworkSystem.Instance.OnReturnedToSinglePlayer += OnLeaveRoom;
@@ -526,7 +526,7 @@ namespace Seralyth.Menu
 
                 if (animatedTitle && title != null)
                 {
-                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "Seralyth Menu";
+                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "Fire Menu";
                     int length = (int)Mathf.PingPong(Time.time / 0.25f, targetString.Length + 1);
                     title.text = length > 0 ? targetString[..length] : "";
                 }
@@ -1859,7 +1859,7 @@ namespace Seralyth.Menu
             {
                 if (buttonSpriteSheet != null) return buttonSpriteSheet;
                 buttonSpriteSheet = ScriptableObject.CreateInstance<TMP_SpriteAsset>();
-                buttonSpriteSheet.name = "Seralyth_SpriteSheet";
+                buttonSpriteSheet.name = "Fire_SpriteSheet";
 
                 var textureList = new List<Texture2D>();
                 var spriteDataList = new List<(string name, int index)>();
@@ -2374,7 +2374,7 @@ namespace Seralyth.Menu
                     case 61:
                         if (videoPlayer == null)
                         {
-                            videoPlayer = new GameObject("Seralyth_VideoPlayer").AddComponent<VideoPlayer>();
+                            videoPlayer = new GameObject("Fire_VideoPlayer").AddComponent<VideoPlayer>();
                             videoPlayer.playOnAwake = true;
                             videoPlayer.isLooping = true;
                             videoPlayer.url = $"{PluginInfo.ServerResourcePath}/Videos/Themes/badapple.mp4";
@@ -2434,7 +2434,7 @@ namespace Seralyth.Menu
                     }
                 }.AddComponent<TextMeshPro>();
                 title.font = activeFont;
-                title.text = translate ? "Seralyth" : "<b>Seralyth</b>";
+                title.text = translate ? "Fire" : "<b>Fire</b>";
 
                 if (doCustomName)
                     title.text = customMenuName;
@@ -2477,7 +2477,7 @@ namespace Seralyth.Menu
 
                 if (animatedTitle)
                 {
-                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "Seralyth Menu";
+                    string targetString = doCustomName ? NoRichtextTags(customMenuName) : "Fire Menu";
                     int length = (int)Mathf.PingPong(Time.time / 0.25f, targetString.Length);
                     title.text = length > 0 ? targetString[..length] : "";
                 }
@@ -3462,7 +3462,7 @@ namespace Seralyth.Menu
                     case "webm":
                     case "mov":
                         {
-                            promptVideoPlayer = new GameObject("Seralyth_PromptVideoPlayer").AddComponent<VideoPlayer>();
+                            promptVideoPlayer = new GameObject("Fire_PromptVideoPlayer").AddComponent<VideoPlayer>();
                             promptVideoPlayer.playOnAwake = true;
                             promptVideoPlayer.isLooping = true;
                             promptVideoPlayer.url = promptImageUrl;
@@ -4285,7 +4285,7 @@ namespace Seralyth.Menu
             if (disableGunLine) return (Ray, GunPointer);
             if (GunLine == null)
             {
-                GameObject line = new GameObject("Seralyth_GunLine");
+                GameObject line = new GameObject("Fire_GunLine");
                 GunLine = line.AddComponent<LineRenderer>();
             }
 
@@ -6801,9 +6801,9 @@ jgs \_   _/ |Oo\
         public static string customMenuName = "Your Text Here";
         public static readonly string menuName =
 #if LEGAL
-            "<b>Seralyth</b> Legal";
+            "<b>Fire</b> Legal";
 #else
-            "<b>Seralyth</b> Menu";
+            "<b>Fire</b> Menu";
 #endif
         public static bool doCustomMenuBackground;
         public static bool menuTrail;
@@ -7009,8 +7009,9 @@ jgs \_   _/ |Oo\
 
         public static ExtGradient backgroundColor = new ExtGradient
         {
-            colors = ExtGradient.GetSolidGradient(
-                new Color32(118, 6, 252, 128)
+            colors = ExtGradient.GetSimpleGradient(
+                new Color32(255, 45, 0, 128),
+                new Color32(255, 140, 0, 128)
             )
         };
 
@@ -7024,14 +7025,15 @@ jgs \_   _/ |Oo\
         public static ExtGradient[] buttonColors = {
             new ExtGradient // Released
             {
-                colors = ExtGradient.GetSolidGradient(
-                    new Color32(118, 6, 252, 255)
+                colors = ExtGradient.GetSimpleGradient(
+                    new Color32(255, 60, 0, 255),
+                    new Color32(255, 165, 0, 255)
                 )
             },
             new ExtGradient // Pressed
             {
                 colors = ExtGradient.GetSolidGradient(
-                    new Color32(88, 6, 186, 255)
+                    new Color32(170, 50, 0, 255)
                 )
             }
         };
