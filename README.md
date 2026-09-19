@@ -139,5 +139,5 @@ If you wish to support us, here are some of the ways you can!
 
 #IMPORTANT#
 
-THIS MOD MENU WAS MADE FROM THE Fire Menu, all credits to them for the menu fork.
+THIS MOD MENU WAS MADE FROM THE Seralyth Menu, all credits to them for the menu fork.
 Also since the mod menu was archived, the menu is to continue its legacy
