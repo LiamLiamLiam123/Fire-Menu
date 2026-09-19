@@ -1,9 +1,9 @@
 ﻿/*
- * Seralyth Menu  Managers/SoundManager.cs
+ * Fire Menu  Managers/SoundManager.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,14 +19,14 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 using Photon.Pun;
-using Seralyth.Menu;
+using Fire.Menu;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using static Seralyth.Menu.Main;
-using static Seralyth.Utilities.AssetUtilities;
+using static Fire.Menu.Main;
+using static Fire.Utilities.AssetUtilities;
 
-namespace Seralyth.Managers
+namespace Fire.Managers
 {
     public class SoundManager
     {

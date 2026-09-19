@@ -1,6 +1,6 @@
 ﻿using Valve.Newtonsoft.Json;
 
-namespace Seralyth.Managers.DiscordRPC.Message
+namespace Fire.Managers.DiscordRPC.Message
 {
     /// <summary>
     /// Created when a error occurs within the ipc and it is sent to the client.

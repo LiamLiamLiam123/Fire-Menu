@@ -1,4 +1,4 @@
-﻿namespace Seralyth.Managers.DiscordRPC
+﻿namespace Fire.Managers.DiscordRPC
 {
     /// <summary>
     /// Rich Presence activity type

@@ -1,8 +1,8 @@
-﻿using Seralyth.Managers.DiscordRPC.Converters;
+﻿using Fire.Managers.DiscordRPC.Converters;
 using Valve.Newtonsoft.Json;
 using Valve.Newtonsoft.Json.Linq;
 
-namespace Seralyth.Managers.DiscordRPC.RPC.Payload
+namespace Fire.Managers.DiscordRPC.RPC.Payload
 {
     /// <summary>
     /// Used for Discord IPC Events

@@ -1,8 +1,8 @@
-﻿using Seralyth.Managers.DiscordRPC.Exceptions;
+﻿using Fire.Managers.DiscordRPC.Exceptions;
 using System;
 using Valve.Newtonsoft.Json;
 
-namespace Seralyth.Managers.DiscordRPC
+namespace Fire.Managers.DiscordRPC
 {
     /// <summary>
     /// Information about the pictures used in the Rich Presence.

@@ -1,6 +1,6 @@
 ﻿using Valve.Newtonsoft.Json;
 
-namespace Seralyth.Managers.DiscordRPC.RPC.Payload
+namespace Fire.Managers.DiscordRPC.RPC.Payload
 {
     internal class ClosePayload : IPayload
     {

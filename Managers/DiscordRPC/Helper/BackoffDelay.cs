@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Seralyth.Managers.DiscordRPC.Helper
+namespace Fire.Managers.DiscordRPC.Helper
 {
 
     internal class BackoffDelay

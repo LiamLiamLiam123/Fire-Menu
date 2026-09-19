@@ -1,7 +1,7 @@
-﻿using Seralyth.Managers.DiscordRPC.Logging;
+﻿using Fire.Managers.DiscordRPC.Logging;
 using System;
 
-namespace Seralyth.Managers.DiscordRPC.IO
+namespace Fire.Managers.DiscordRPC.IO
 {
     /// <summary>
     /// Pipe Client used to communicate with Discord.

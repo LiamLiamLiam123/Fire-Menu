@@ -1,7 +1,7 @@
-﻿using Seralyth.Managers.DiscordRPC.Converters;
+﻿using Fire.Managers.DiscordRPC.Converters;
 using Valve.Newtonsoft.Json;
 
-namespace Seralyth.Managers.DiscordRPC.RPC.Payload
+namespace Fire.Managers.DiscordRPC.RPC.Payload
 {
     /// <summary>
     /// Base Payload that is received by both client and server

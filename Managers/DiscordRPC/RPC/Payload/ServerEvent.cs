@@ -1,6 +1,6 @@
-﻿using Seralyth.Managers.DiscordRPC.Converters;
+﻿using Fire.Managers.DiscordRPC.Converters;
 
-namespace Seralyth.Managers.DiscordRPC.RPC.Payload
+namespace Fire.Managers.DiscordRPC.RPC.Payload
 {
     /// <summary>
     /// See https://discordapp.com/developers/docs/topics/rpc#rpc-server-payloads-rpc-events for documentation
