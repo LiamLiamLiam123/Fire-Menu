@@ -1,9 +1,9 @@
-/*
- * Seralyth Menu  Patches/Menu/FirePatch.cs
+﻿/*
+ * Fire Menu  Patches/Menu/FirePatch.cs
  * A community driven mod menu for Gorilla Tag with over 1000+ mods
  *
- * Copyright (C) 2026  Seralyth Software
- * https://github.com/Seralyth/Seralyth-Menu
+ * Copyright (C) 2026  Fire Software
+ * https://github.com/Fire/Fire-Menu
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,13 +20,13 @@
  */
 
 using HarmonyLib;
-using Seralyth.Extensions;
+using Fire.Extensions;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static Seralyth.Utilities.GameModeUtilities;
+using static Fire.Utilities.GameModeUtilities;
 
-namespace Seralyth.Patches.Menu
+namespace Fire.Patches.Menu
 {
     [HarmonyPatch(typeof(SIGadgetChargeBlaster), nameof(SIGadgetChargeBlaster.FireProjectile))]
     public class FirePatch
